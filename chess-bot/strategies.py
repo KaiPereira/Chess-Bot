@@ -36,7 +36,7 @@ class PyBot(ExampleEngine):
     def search(self, board: chess.Board, time_limit: Limit, ponder: bool, draw_offered: bool, root_moves: MOVE) -> PlayResult:
         print("GETTING MOVE!")
         
-        move = get_move(board, 3)
+        move = get_move(board, 4)
 
         return PlayResult(move, None)
 

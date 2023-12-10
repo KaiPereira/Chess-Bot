@@ -1,11 +1,11 @@
-2023-12-09 16:41:27,914 __main__ (lichess-bot.py:1026) INFO 
+2023-12-10 13:37:55,295 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-09 16:41:27,943 config (config.py:261) DEBUG Config:
+2023-12-10 13:37:55,322 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -28,9 +28,9 @@ engine:
     resign_score: -1000
     resign_for_egtb_minus_two: true
     resign_moves: 3
-    offer_draw_enabled: true
+    offer_draw_enabled: false
     offer_draw_score: 0
-    offer_draw_for_egtb_zero: true
+    offer_draw_for_egtb_zero: false
     offer_draw_moves: 10
     offer_draw_pieces: 10
   online_moves:
@@ -101,7 +101,7 @@ challenge:
   min_increment: 0
   max_base: 1800
   min_base: 0
-  max_days: 14
+  max_days: .inf
   min_days: 1
   variants:
   - standard
@@ -139,8 +139,8 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-09 16:41:27,943 config (config.py:262) DEBUG ====================
-2023-12-09 16:41:27,951 config (config.py:261) DEBUG Config:
+2023-12-10 13:37:55,322 config (config.py:262) DEBUG ====================
+2023-12-10 13:37:55,327 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -163,9 +163,9 @@ engine:
     resign_score: -1000
     resign_for_egtb_minus_two: true
     resign_moves: 3
-    offer_draw_enabled: true
+    offer_draw_enabled: false
     offer_draw_score: 0
-    offer_draw_for_egtb_zero: true
+    offer_draw_for_egtb_zero: false
     offer_draw_moves: 10
     offer_draw_pieces: 10
   online_moves:
@@ -239,7 +239,7 @@ challenge:
   min_increment: 0
   max_base: 1800
   min_base: 0
-  max_days: 14
+  max_days: .inf
   min_days: 1
   variants:
   - standard
@@ -286,22 +286,66 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-09 16:41:27,951 config (config.py:262) DEBUG ====================
-2023-12-09 16:41:27,952 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-09 16:41:28,345 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-09 16:41:28,345 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-09 16:41:28,349 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-09 16:41:29,235 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-09 16:41:29,395 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-09 16:41:29,395 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-09 16:41:29,397 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2023-12-09 16:41:30,341 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 None
-2023-12-09 16:41:31,924 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': 'zgFlgBSyl2WW', 'gameId': 'zgFlgBSy', 'fen': 'r3kb1r/ppp2ppp/4bn2/4p3/Pn1p4/8/2PPPPPP/2BQKBNR b Kkq - 0 12', 'color': 'white', 'lastMove': 'a3a4', 'source': 'friend', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': True, 'opponent': {'id': 'kai_pereira', 'username': 'Kai_Pereira', 'rating': 1500}, 'isMyTurn': False, 'secondsLeft': 1209600, 'compat': {'bot': True, 'board': True}, 'id': 'zgFlgBSy'}}
-2023-12-09 16:41:31,924 __main__ (lichess-bot.py:511) INFO --- Enqueue https://lichess.org/zgFlgBSy
-2023-12-09 16:41:33,554 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameFinish', 'game': {'fullId': 'zgFlgBSyl2WW', 'gameId': 'zgFlgBSy', 'fen': 'r3kb1r/ppp2ppp/4bn2/4p3/Pn1p4/8/2PPPPPP/2BQKBNR b Kkq - 0 12', 'color': 'white', 'lastMove': 'a3a4', 'source': 'friend', 'status': {'id': 31, 'name': 'resign'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': True, 'opponent': {'id': 'kai_pereira', 'username': 'Kai_Pereira', 'rating': 1500}, 'isMyTurn': False, 'winner': 'white', 'compat': {'bot': True, 'board': True}, 'id': 'zgFlgBSy'}}
-2023-12-09 16:41:53,307 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'challenge', 'challenge': {'id': 'WXLNlBkn', 'url': 'https://lichess.org/WXLNlBkn', 'status': 'created', 'challenger': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'rating': 1500, 'title': None, 'provisional': True, 'online': True, 'lag': 4}, 'destUser': {'id': 'kai_bot', 'name': 'Kai_Bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'classical', 'timeControl': {'type': 'clock', 'limit': 10800, 'increment': 9, 'show': '180+9'}, 'color': 'black', 'finalColor': 'black', 'perf': {'icon': '\ue01f', 'name': 'Classical'}}, 'compat': {'bot': True, 'board': True}}
-2023-12-09 16:41:53,310 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2023-12-09 16:41:54,234 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/challenge/WXLNlBkn/decline HTTP/1.1" 200 11
-2023-12-09 16:41:54,235 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'challengeDeclined', 'challenge': {'id': 'WXLNlBkn', 'url': 'https://lichess.org/WXLNlBkn', 'status': 'declined', 'challenger': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'rating': 1500, 'title': None, 'provisional': True, 'online': True, 'lag': 4}, 'destUser': {'id': 'kai_bot', 'name': 'Kai_Bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'classical', 'timeControl': {'type': 'clock', 'limit': 10800, 'increment': 9, 'show': '180+9'}, 'color': 'black', 'finalColor': 'black', 'perf': {'icon': '\ue01f', 'name': 'Classical'}, 'declineReason': "I'm not accepting challenges with this time control.", 'declineReasonKey': 'timecontrol'}}
-2023-12-09 16:41:54,235 matchmaking (matchmaking.py:323) INFO BOT Kai_Bot (2000?) declined Classical casual challenge from Kai_Pereira (1500?) (WXLNlBkn): I'm not accepting challenges with this time control.
-2023-12-09 16:42:49,404 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2023-12-10 13:37:55,327 config (config.py:262) DEBUG ====================
+2023-12-10 13:37:55,327 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-10 13:37:55,329 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-10 13:37:55,329 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-10 13:37:55,333 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-10 13:37:56,933 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-10 13:37:57,111 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-10 13:37:57,111 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-10 13:37:57,113 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-10 13:37:58,212 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2023-12-10 13:42:59,122 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 13:47:59,123 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 13:52:59,124 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 13:57:59,125 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 14:02:59,125 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 14:07:59,126 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-10 14:19:13,686 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'terminated', 'error': 'Traceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 444, in _error_catcher\n    yield\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 828, in read_chunked\n    self._update_chunk_length()\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 758, in _update_chunk_length\n    line = self._fp.fp.readline()\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\socket.py", line 706, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1311, in recv_into\n    return self.read(nbytes, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1167, in read\n    return self._sslobj.read(len, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 816, in generate\n    yield from self.raw.stream(chunk_size, decode_content=True)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 624, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 816, in read_chunked\n    with self._error_catcher():\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\contextlib.py", line 155, in __exit__\n    self.gen.throw(typ, value, traceback)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 449, in _error_catcher\n    raise ReadTimeoutError(self._pool, None, "Read timed out.")\nurllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\lichess-bot.py", line 91, in watch_control_stream\n    for line in lines:\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 865, in iter_lines\n    for chunk in self.iter_content(\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 822, in generate\n    raise ConnectionError(e)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n'}
+2023-12-10 14:19:13,687 __main__ (lichess-bot.py:317) DEBUG Terminating exception:
+Traceback (most recent call last):
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 828, in read_chunked
+    self._update_chunk_length()
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 758, in _update_chunk_length
+    line = self._fp.fp.readline()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1311, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1167, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 624, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 816, in read_chunked
+    with self._error_catcher():
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 449, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='lichess.org', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 91, in watch_control_stream
+    for line in lines:
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\models.py", line 865, in iter_lines
+    for chunk in self.iter_content(
+  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\models.py", line 822, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='lichess.org', port=443): Read timed out.
+
