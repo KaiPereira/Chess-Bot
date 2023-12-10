@@ -1,0 +1,307 @@
+2023-12-09 16:41:27,914 __main__ (lichess-bot.py:1026) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2023.12.1.2
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2023-12-09 16:41:27,943 config (config.py:261) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  - fromPosition
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+
+2023-12-09 16:41:27,943 config (config.py:262) DEBUG ====================
+2023-12-09 16:41:27,951 config (config.py:261) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  - fromPosition
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+  block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_file_grouping: game
+
+2023-12-09 16:41:27,951 config (config.py:262) DEBUG ====================
+2023-12-09 16:41:27,952 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-09 16:41:28,345 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-09 16:41:28,345 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-09 16:41:28,349 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-09 16:41:29,235 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-09 16:41:29,395 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-09 16:41:29,395 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-09 16:41:29,397 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-09 16:41:30,341 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 None
+2023-12-09 16:41:31,924 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': 'zgFlgBSyl2WW', 'gameId': 'zgFlgBSy', 'fen': 'r3kb1r/ppp2ppp/4bn2/4p3/Pn1p4/8/2PPPPPP/2BQKBNR b Kkq - 0 12', 'color': 'white', 'lastMove': 'a3a4', 'source': 'friend', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': True, 'opponent': {'id': 'kai_pereira', 'username': 'Kai_Pereira', 'rating': 1500}, 'isMyTurn': False, 'secondsLeft': 1209600, 'compat': {'bot': True, 'board': True}, 'id': 'zgFlgBSy'}}
+2023-12-09 16:41:31,924 __main__ (lichess-bot.py:511) INFO --- Enqueue https://lichess.org/zgFlgBSy
+2023-12-09 16:41:33,554 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameFinish', 'game': {'fullId': 'zgFlgBSyl2WW', 'gameId': 'zgFlgBSy', 'fen': 'r3kb1r/ppp2ppp/4bn2/4p3/Pn1p4/8/2PPPPPP/2BQKBNR b Kkq - 0 12', 'color': 'white', 'lastMove': 'a3a4', 'source': 'friend', 'status': {'id': 31, 'name': 'resign'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': True, 'opponent': {'id': 'kai_pereira', 'username': 'Kai_Pereira', 'rating': 1500}, 'isMyTurn': False, 'winner': 'white', 'compat': {'bot': True, 'board': True}, 'id': 'zgFlgBSy'}}
+2023-12-09 16:41:53,307 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'challenge', 'challenge': {'id': 'WXLNlBkn', 'url': 'https://lichess.org/WXLNlBkn', 'status': 'created', 'challenger': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'rating': 1500, 'title': None, 'provisional': True, 'online': True, 'lag': 4}, 'destUser': {'id': 'kai_bot', 'name': 'Kai_Bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'classical', 'timeControl': {'type': 'clock', 'limit': 10800, 'increment': 9, 'show': '180+9'}, 'color': 'black', 'finalColor': 'black', 'perf': {'icon': '\ue01f', 'name': 'Classical'}}, 'compat': {'bot': True, 'board': True}}
+2023-12-09 16:41:53,310 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
+2023-12-09 16:41:54,234 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/challenge/WXLNlBkn/decline HTTP/1.1" 200 11
+2023-12-09 16:41:54,235 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'challengeDeclined', 'challenge': {'id': 'WXLNlBkn', 'url': 'https://lichess.org/WXLNlBkn', 'status': 'declined', 'challenger': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'rating': 1500, 'title': None, 'provisional': True, 'online': True, 'lag': 4}, 'destUser': {'id': 'kai_bot', 'name': 'Kai_Bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'classical', 'timeControl': {'type': 'clock', 'limit': 10800, 'increment': 9, 'show': '180+9'}, 'color': 'black', 'finalColor': 'black', 'perf': {'icon': '\ue01f', 'name': 'Classical'}, 'declineReason': "I'm not accepting challenges with this time control.", 'declineReasonKey': 'timecontrol'}}
+2023-12-09 16:41:54,235 matchmaking (matchmaking.py:323) INFO BOT Kai_Bot (2000?) declined Classical casual challenge from Kai_Pereira (1500?) (WXLNlBkn): I'm not accepting challenges with this time control.
+2023-12-09 16:42:49,404 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
