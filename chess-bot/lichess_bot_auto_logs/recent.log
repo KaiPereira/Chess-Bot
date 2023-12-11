@@ -1,11 +1,11 @@
-2023-12-10 14:19:23,759 __main__ (lichess-bot.py:1026) INFO 
+2023-12-11 05:13:52,540 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-10 14:19:23,783 config (config.py:261) DEBUG Config:
+2023-12-11 05:13:52,561 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,8 +139,8 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-10 14:19:23,784 config (config.py:262) DEBUG ====================
-2023-12-10 14:19:23,788 config (config.py:261) DEBUG Config:
+2023-12-11 05:13:52,562 config (config.py:262) DEBUG ====================
+2023-12-11 05:13:52,569 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -286,12 +286,13 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-10 14:19:23,788 config (config.py:262) DEBUG ====================
-2023-12-10 14:19:23,789 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-10 14:19:23,791 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-10 14:19:23,791 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-10 14:19:23,794 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-10 14:19:24,614 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-10 14:19:24,774 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-10 14:19:24,775 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-10 14:19:24,776 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-11 05:13:52,570 config (config.py:262) DEBUG ====================
+2023-12-11 05:13:52,570 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-11 05:13:52,572 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-11 05:13:52,572 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-11 05:13:52,575 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-11 05:13:53,398 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-11 05:13:53,558 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-11 05:13:53,558 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-11 05:13:53,560 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-11 05:13:54,435 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17

@@ -1,11 +1,11 @@
-2023-12-10 13:37:55,295 __main__ (lichess-bot.py:1026) INFO 
+2023-12-10 17:24:04,703 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-10 13:37:55,322 config (config.py:261) DEBUG Config:
+2023-12-10 17:24:04,727 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,8 +139,8 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-10 13:37:55,322 config (config.py:262) DEBUG ====================
-2023-12-10 13:37:55,327 config (config.py:261) DEBUG Config:
+2023-12-10 17:24:04,729 config (config.py:262) DEBUG ====================
+2023-12-10 17:24:04,735 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -286,24 +286,18 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-10 13:37:55,327 config (config.py:262) DEBUG ====================
-2023-12-10 13:37:55,327 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-10 13:37:55,329 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-10 13:37:55,329 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-10 13:37:55,333 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-10 13:37:56,933 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-10 13:37:57,111 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-10 13:37:57,111 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-10 13:37:57,113 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2023-12-10 13:37:58,212 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
-2023-12-10 13:42:59,122 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 13:47:59,123 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 13:52:59,124 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 13:57:59,125 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 14:02:59,125 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 14:07:59,126 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-10 14:19:13,686 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'terminated', 'error': 'Traceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 444, in _error_catcher\n    yield\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 828, in read_chunked\n    self._update_chunk_length()\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 758, in _update_chunk_length\n    line = self._fp.fp.readline()\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\socket.py", line 706, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1311, in recv_into\n    return self.read(nbytes, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1167, in read\n    return self._sslobj.read(len, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 816, in generate\n    yield from self.raw.stream(chunk_size, decode_content=True)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 624, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 816, in read_chunked\n    with self._error_catcher():\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\contextlib.py", line 155, in __exit__\n    self.gen.throw(typ, value, traceback)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 449, in _error_catcher\n    raise ReadTimeoutError(self._pool, None, "Read timed out.")\nurllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\lichess-bot.py", line 91, in watch_control_stream\n    for line in lines:\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 865, in iter_lines\n    for chunk in self.iter_content(\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 822, in generate\n    raise ConnectionError(e)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n'}
-2023-12-10 14:19:13,687 __main__ (lichess-bot.py:317) DEBUG Terminating exception:
+2023-12-10 17:24:04,735 config (config.py:262) DEBUG ====================
+2023-12-10 17:24:04,735 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-10 17:24:04,737 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-10 17:24:04,738 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-10 17:24:04,741 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-10 17:24:05,825 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-10 17:24:05,988 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-10 17:24:05,988 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-10 17:24:05,990 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-10 17:24:07,032 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2023-12-11 05:13:42,397 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'terminated', 'error': 'Traceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 444, in _error_catcher\n    yield\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 828, in read_chunked\n    self._update_chunk_length()\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 758, in _update_chunk_length\n    line = self._fp.fp.readline()\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\socket.py", line 706, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1311, in recv_into\n    return self.read(nbytes, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\ssl.py", line 1167, in read\n    return self._sslobj.read(len, buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 816, in generate\n    yield from self.raw.stream(chunk_size, decode_content=True)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 624, in stream\n    for line in self.read_chunked(amt, decode_content=decode_content):\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 816, in read_chunked\n    with self._error_catcher():\n  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\\Lib\\contextlib.py", line 155, in __exit__\n    self.gen.throw(typ, value, traceback)\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\response.py", line 449, in _error_catcher\n    raise ReadTimeoutError(self._pool, None, "Read timed out.")\nurllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\lichess-bot.py", line 91, in watch_control_stream\n    for line in lines:\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 865, in iter_lines\n    for chunk in self.iter_content(\n  File "C:\\Users\\keira\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\models.py", line 822, in generate\n    raise ConnectionError(e)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host=\'lichess.org\', port=443): Read timed out.\n'}
+2023-12-11 05:13:42,397 __main__ (lichess-bot.py:317) DEBUG Terminating exception:
 Traceback (most recent call last):
   File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\response.py", line 444, in _error_catcher
     yield
