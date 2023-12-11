@@ -1,11 +1,11 @@
-2023-12-11 05:13:52,540 __main__ (lichess-bot.py:1026) INFO 
+2023-12-11 06:55:54,516 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-11 05:13:52,561 config (config.py:261) DEBUG Config:
+2023-12-11 06:55:54,544 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,8 +139,8 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-11 05:13:52,562 config (config.py:262) DEBUG ====================
-2023-12-11 05:13:52,569 config (config.py:261) DEBUG Config:
+2023-12-11 06:55:54,545 config (config.py:262) DEBUG ====================
+2023-12-11 06:55:54,550 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -286,13 +286,86 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-11 05:13:52,570 config (config.py:262) DEBUG ====================
-2023-12-11 05:13:52,570 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-11 05:13:52,572 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 05:13:52,572 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-11 05:13:52,575 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-11 05:13:53,398 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-11 05:13:53,558 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-11 05:13:53,558 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-11 05:13:53,560 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2023-12-11 05:13:54,435 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2023-12-11 06:55:54,551 config (config.py:262) DEBUG ====================
+2023-12-11 06:55:54,551 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-11 06:55:55,001 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-11 06:55:55,001 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-11 06:55:55,008 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-11 06:55:55,910 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-11 06:55:56,073 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-11 06:55:56,073 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-11 06:55:56,075 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-11 06:55:57,049 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2023-12-11 06:55:59,852 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': '7IDf5QoBF2JK', 'gameId': '7IDf5QoB', 'fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 'color': 'white', 'lastMove': '', 'source': 'ai', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': False, 'opponent': {'id': None, 'username': 'Stockfish level 4', 'ai': 4}, 'isMyTurn': True, 'compat': {'bot': True, 'board': True}, 'id': '7IDf5QoB'}}
+2023-12-11 06:55:59,852 __main__ (lichess-bot.py:257) INFO --- Process Used. Count: 1. IDs: {'7IDf5QoB'}
+2023-12-11 06:55:59,865 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-11 06:56:00,757 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/7IDf5QoB HTTP/1.1" 200 None
+2023-12-11 06:56:00,758 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': '7IDf5QoB', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1702306559362, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'aiLevel': 4}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
+2023-12-11 06:56:01,260 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-11 06:56:01,261 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game 7IDf5QoB has pid=?
+2023-12-11 06:56:01,261 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/7IDf5QoB/white Correspondence vs AI level 4 (7IDf5QoB)
+2023-12-11 06:56:01,261 conversation (conversation.py:83) INFO *** https://lichess.org/7IDf5QoB/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
+2023-12-11 06:56:01,262 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (2): lichess.org:443
+2023-12-11 06:56:02,109 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/chat HTTP/1.1" 200 11
+2023-12-11 06:56:02,109 conversation (conversation.py:83) INFO *** https://lichess.org/7IDf5QoB/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
+2023-12-11 06:56:02,276 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/chat HTTP/1.1" 200 11
+2023-12-11 06:56:02,277 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:02,277 __mp_main__ (lichess-bot.py:692) INFO move: 1
+2023-12-11 06:56:02,277 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game 7IDf5QoB
+2023-12-11 06:56:02,836 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:03,510 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/e2e4?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:03,511 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'chatLine', 'room': 'player', 'username': 'Kai_Bot', 'text': "Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to."}
+2023-12-11 06:56:03,511 conversation (conversation.py:42) INFO *** https://lichess.org/7IDf5QoB/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
+2023-12-11 06:56:03,512 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'chatLine', 'room': 'spectator', 'username': 'Kai_Bot', 'text': "Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to."}
+2023-12-11 06:56:03,512 conversation (conversation.py:42) INFO *** https://lichess.org/7IDf5QoB/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
+2023-12-11 06:56:03,513 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:05,533 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:05,534 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:05,534 __mp_main__ (lichess-bot.py:692) INFO move: 2
+2023-12-11 06:56:05,535 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:06,084 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:06,762 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/d2d4?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:06,764 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:07,714 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:07,714 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:07,715 __mp_main__ (lichess-bot.py:692) INFO move: 3
+2023-12-11 06:56:07,715 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:08,244 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:08,921 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/b1c3?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:08,923 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:10,815 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:10,816 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:10,816 __mp_main__ (lichess-bot.py:692) INFO move: 4
+2023-12-11 06:56:10,817 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:11,401 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:12,081 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/c3e4?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:12,083 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:13,974 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:13,975 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:13,975 __mp_main__ (lichess-bot.py:692) INFO move: 5
+2023-12-11 06:56:13,975 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:14,598 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:15,270 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/e4f6?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:15,274 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:17,395 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:17,396 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:17,396 __mp_main__ (lichess-bot.py:692) INFO move: 6
+2023-12-11 06:56:17,397 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:18,021 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:18,691 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/f1c4?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:18,693 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 f1c4', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:20,551 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 f1c4 f8d6', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:20,552 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:20,552 __mp_main__ (lichess-bot.py:692) INFO move: 7
+2023-12-11 06:56:20,553 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:39,708 engine_wrapper (engine_wrapper.py:297) INFO Source: Engine
+2023-12-11 06:56:39,709 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
+2023-12-11 06:56:41,059 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/7IDf5QoB/move/e1f1?offeringDraw=false HTTP/1.1" 200 11
+2023-12-11 06:56:41,063 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 f1c4 f8d6 e1f1', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:45,739 __mp_main__ (lichess-bot.py:700) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 f1c4 f8d6 e1f1 e8g8', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}
+2023-12-11 06:56:45,740 __mp_main__ (lichess-bot.py:691) INFO 
+2023-12-11 06:56:45,740 __mp_main__ (lichess-bot.py:692) INFO move: 8
+2023-12-11 06:56:45,741 engine_wrapper (engine_wrapper.py:639) INFO Searching for time 60 seconds for game 7IDf5QoB
+2023-12-11 06:56:47,064 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameFinish', 'game': {'fullId': '7IDf5QoBF2JK', 'gameId': '7IDf5QoB', 'fen': 'rnbq1rk1/pp3ppp/2pb1p2/8/2BP4/8/PPP2PPP/R1BQ1KNR w - - 4 8', 'color': 'white', 'lastMove': 'e8g8', 'source': 'ai', 'status': {'id': 31, 'name': 'resign'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': True, 'opponent': {'id': None, 'username': 'Stockfish level 4', 'ai': 4}, 'isMyTurn': False, 'winner': 'black', 'compat': {'bot': True, 'board': True}, 'id': '7IDf5QoB'}}
+2023-12-11 06:56:50,879 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2023-12-11 06:56:50,879 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
