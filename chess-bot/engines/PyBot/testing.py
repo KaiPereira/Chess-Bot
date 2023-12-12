@@ -19,7 +19,7 @@ def random_board(max_depth=200):
   return board
 
 
-board = chess.Board("r1bqkb1r/ppppn2p/5p2/1B2p3/1n6/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 2 7")
+board = chess.Board("1r6/p1p2ppp/5n2/3k1p2/1b6/5N2/P1PP1PPP/1RB1K2R w K - 0 16")
 
 
 evaluation = get_move(board, 4)

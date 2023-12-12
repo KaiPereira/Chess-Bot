@@ -1,11 +1,11 @@
-2023-12-11 16:23:19,799 __main__ (lichess-bot.py:1026) INFO 
+2023-12-11 18:21:15,650 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-11 16:23:19,824 config (config.py:261) DEBUG Config:
+2023-12-11 18:21:15,678 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,8 +139,8 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-11 16:23:19,825 config (config.py:262) DEBUG ====================
-2023-12-11 16:23:19,830 config (config.py:261) DEBUG Config:
+2023-12-11 18:21:15,679 config (config.py:262) DEBUG ====================
+2023-12-11 18:21:15,684 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -286,135 +286,15 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-11 16:23:19,831 config (config.py:262) DEBUG ====================
-2023-12-11 16:23:19,831 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-11 16:23:19,838 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 16:23:19,838 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-11 16:23:19,842 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-11 16:23:20,747 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-11 16:23:20,913 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-11 16:23:20,913 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-11 16:23:20,915 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2023-12-11 16:23:21,859 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
-2023-12-11 16:28:22,463 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-11 16:33:22,464 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-11 16:33:40,891 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': 'zowBlNxEs6kJ', 'gameId': 'zowBlNxE', 'fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 'color': 'white', 'lastMove': '', 'source': 'ai', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': False, 'opponent': {'id': None, 'username': 'Stockfish level 3', 'ai': 3}, 'isMyTurn': True, 'compat': {'bot': True, 'board': True}, 'id': 'zowBlNxE'}}
-2023-12-11 16:33:40,892 __main__ (lichess-bot.py:257) INFO --- Process Used. Count: 1. IDs: {'zowBlNxE'}
-2023-12-11 16:33:40,905 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-11 16:33:41,789 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/zowBlNxE HTTP/1.1" 200 None
-2023-12-11 16:33:41,790 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'zowBlNxE', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1702341221090, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'aiLevel': 3}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2023-12-11 16:33:41,793 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 16:33:41,793 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game zowBlNxE has pid=?
-2023-12-11 16:33:41,794 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/zowBlNxE/white Correspondence vs AI level 3 (zowBlNxE)
-2023-12-11 16:33:41,794 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2023-12-11 16:33:41,796 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (2): lichess.org:443
-2023-12-11 16:33:42,685 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:42,685 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2023-12-11 16:33:42,846 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:42,847 __mp_main__ (lichess-bot.py:691) INFO 
-2023-12-11 16:33:42,847 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2023-12-11 16:33:42,847 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game zowBlNxE
-2023-12-11 16:33:42,848 backoff (_common.py:105) INFO Backing off play_game(...) for 0.2s (NameError: name 'get_move' is not defined)
-2023-12-11 16:33:42,848 lichess (lichess.py:63) DEBUG Backing off 0.2 seconds after 1 tries calling function <function play_game at 0x000001BE5E76B740> with args () and kwargs {'li': <lichess.Lichess object at 0x000001BE5E76E010>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7d0e50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1702340401053, 'playTime': {'total': 2897, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 67, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 36, 'lossH': 36, 'win': 29, 'winH': 29, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000001BE5E7D2610>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x1be5e7dcd50>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dcf90>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dd1d0>, 'game_id': 'zowBlNxE'}
-2023-12-11 16:33:42,851 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^
-NameError: name 'get_move' is not defined
-
-2023-12-11 16:33:43,057 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2023-12-11 16:33:43,956 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/zowBlNxE HTTP/1.1" 200 None
-2023-12-11 16:33:43,957 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'zowBlNxE', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1702341221090, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'aiLevel': 3}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2023-12-11 16:33:43,957 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 16:33:43,957 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game zowBlNxE has pid=?
-2023-12-11 16:33:43,958 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/zowBlNxE/white Correspondence vs AI level 3 (zowBlNxE)
-2023-12-11 16:33:43,958 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2023-12-11 16:33:44,120 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:44,121 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2023-12-11 16:33:44,292 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:44,293 __mp_main__ (lichess-bot.py:691) INFO 
-2023-12-11 16:33:44,293 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2023-12-11 16:33:44,295 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game zowBlNxE
-2023-12-11 16:33:44,296 backoff (_common.py:105) INFO Backing off play_game(...) for 1.4s (NameError: name 'get_move' is not defined)
-2023-12-11 16:33:44,296 lichess (lichess.py:63) DEBUG Backing off 1.4 seconds after 2 tries calling function <function play_game at 0x000001BE5E76B740> with args () and kwargs {'li': <lichess.Lichess object at 0x000001BE5E76E010>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7d0e50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1702340401053, 'playTime': {'total': 2897, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 67, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 36, 'lossH': 36, 'win': 29, 'winH': 29, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000001BE5E7D2610>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x1be5e7dcd50>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dcf90>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dd1d0>, 'game_id': 'zowBlNxE'}
-2023-12-11 16:33:44,298 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^
-NameError: name 'get_move' is not defined
-
-2023-12-11 16:33:45,668 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2023-12-11 16:33:46,627 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/zowBlNxE HTTP/1.1" 200 None
-2023-12-11 16:33:46,627 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'zowBlNxE', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1702341221090, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'aiLevel': 3}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2023-12-11 16:33:46,628 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 16:33:46,628 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game zowBlNxE has pid=?
-2023-12-11 16:33:46,628 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/zowBlNxE/white Correspondence vs AI level 3 (zowBlNxE)
-2023-12-11 16:33:46,629 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2023-12-11 16:33:46,788 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:46,789 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2023-12-11 16:33:46,946 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:46,947 __mp_main__ (lichess-bot.py:691) INFO 
-2023-12-11 16:33:46,947 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2023-12-11 16:33:46,947 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game zowBlNxE
-2023-12-11 16:33:46,948 backoff (_common.py:105) INFO Backing off play_game(...) for 2.9s (NameError: name 'get_move' is not defined)
-2023-12-11 16:33:46,948 lichess (lichess.py:63) DEBUG Backing off 2.9 seconds after 3 tries calling function <function play_game at 0x000001BE5E76B740> with args () and kwargs {'li': <lichess.Lichess object at 0x000001BE5E76E010>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7d0e50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1702340401053, 'playTime': {'total': 2897, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 67, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 36, 'lossH': 36, 'win': 29, 'winH': 29, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000001BE5E7D2610>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x1be5e7dcd50>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dcf90>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dd1d0>, 'game_id': 'zowBlNxE'}
-2023-12-11 16:33:46,949 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^
-NameError: name 'get_move' is not defined
-
-2023-12-11 16:33:49,853 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2023-12-11 16:33:50,685 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/zowBlNxE HTTP/1.1" 200 None
-2023-12-11 16:33:50,686 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'zowBlNxE', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1702341221090, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'aiLevel': 3}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2023-12-11 16:33:50,687 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 16:33:50,687 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game zowBlNxE has pid=?
-2023-12-11 16:33:50,687 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/zowBlNxE/white Correspondence vs AI level 3 (zowBlNxE)
-2023-12-11 16:33:50,687 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2023-12-11 16:33:50,846 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:50,847 conversation (conversation.py:83) INFO *** https://lichess.org/zowBlNxE/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2023-12-11 16:33:51,007 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/zowBlNxE/chat HTTP/1.1" 200 11
-2023-12-11 16:33:51,008 __mp_main__ (lichess-bot.py:691) INFO 
-2023-12-11 16:33:51,008 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2023-12-11 16:33:51,009 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game zowBlNxE
-2023-12-11 16:33:51,009 backoff (_common.py:105) INFO Backing off play_game(...) for 7.0s (NameError: name 'get_move' is not defined)
-2023-12-11 16:33:51,009 lichess (lichess.py:63) DEBUG Backing off 7.0 seconds after 4 tries calling function <function play_game at 0x000001BE5E76B740> with args () and kwargs {'li': <lichess.Lichess object at 0x000001BE5E76E010>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7d0e50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1702340401053, 'playTime': {'total': 2897, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 67, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 36, 'lossH': 36, 'win': 29, 'winH': 29, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000001BE5E7D2610>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x1be5e7dcd50>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dcf90>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x1be5e7dd1d0>, 'game_id': 'zowBlNxE'}
-2023-12-11 16:33:51,010 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^
-NameError: name 'get_move' is not defined
-
-2023-12-11 16:33:54,044 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2023-12-11 18:21:15,684 config (config.py:262) DEBUG ====================
+2023-12-11 18:21:15,685 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-11 18:21:15,687 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2023-12-11 18:21:15,687 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2023-12-11 18:21:15,691 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2023-12-11 18:21:16,563 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2023-12-11 18:21:16,755 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2023-12-11 18:21:16,756 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2023-12-11 18:21:16,757 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2023-12-11 18:21:17,750 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2023-12-11 18:26:18,515 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2023-12-11 18:28:09,740 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.

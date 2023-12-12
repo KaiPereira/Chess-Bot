@@ -45,27 +45,62 @@ def piece_position_evaluation(board, type, pieces_left):
 def get_evaluation(board):
 
     # Check for checkmate of the opponent
-    if (board.turn == chess.WHITE) & board.is_checkmate():
-        return -99999
-    elif (board.turn == chess.BLACK) & board.is_checkmate():
-        return 99999
-
-    material, pieces_left = get_material(board)
-
-    pawn_p_eval = piece_position_evaluation(board, chess.PAWN, pieces_left)
-    knight_p_eval = piece_position_evaluation(board, chess.KNIGHT, pieces_left)
-    bishop_p_eval = piece_position_evaluation(board, chess.BISHOP, pieces_left)
-    rook_p_eval = piece_position_evaluation(board, chess.ROOK, pieces_left)
-    king_p_eval = piece_position_evaluation(board, chess.KING, pieces_left)
-    queen_p_eval = piece_position_evaluation(board, chess.QUEEN, pieces_left)
-
-    position_eval = pawn_p_eval + knight_p_eval + bishop_p_eval + rook_p_eval + king_p_eval + queen_p_eval
-
-    eval = material + position_eval
-
-
-    # If it's going to be stalemate and our eval is higher then set it to 0
+    if board.is_checkmate():
+        if board.turn:
+            return -9999
+        else:
+            return 9999
     if board.is_stalemate():
-        return 0
+            return 0
+    if board.is_insufficient_material():
+            return 0
+
+
+    total_material, pieces_left = get_material(board)
+    
+
+    # How many pieces until it's engame
+    endgame_amount_pieces = 17
+
+
+    # Pawns try to promote in engame
+    pawn_positions = None;
+
+    if pieces_left < endgame_amount_pieces:
+        pawn_positions = positions.pawn_end
+    else:
+        pawn_positions = positions.pawn
+
+
+    pawnsq = sum([pawn_positions[i] for i in board.pieces(chess.PAWN, chess.WHITE)])
+    pawnsq = pawnsq + sum([-pawn_positions[chess.square_mirror(i)]
+                        for i in board.pieces(chess.PAWN, chess.BLACK)])
+    knightsq = sum([positions.knight[i] for i in board.pieces(chess.KNIGHT, chess.WHITE)])
+    knightsq = knightsq + sum([-positions.knight[chess.square_mirror(i)]
+                            for i in board.pieces(chess.KNIGHT, chess.BLACK)])
+    bishopsq = sum([positions.bishop[i] for i in board.pieces(chess.BISHOP, chess.WHITE)])
+    bishopsq = bishopsq + sum([-positions.bishop[chess.square_mirror(i)]
+                            for i in board.pieces(chess.BISHOP, chess.BLACK)])
+    rooksq = sum([positions.rook[i] for i in board.pieces(chess.ROOK, chess.WHITE)])
+    rooksq = rooksq + sum([-positions.rook[chess.square_mirror(i)]
+                        for i in board.pieces(chess.ROOK, chess.BLACK)])
+    queensq = sum([positions.queen[i] for i in board.pieces(chess.QUEEN, chess.WHITE)])
+    queensq = queensq + sum([-positions.queen[chess.square_mirror(i)]
+                            for i in board.pieces(chess.QUEEN, chess.BLACK)])
+
+
+    # Kings tries to go to the middle in engame
+    kings_positions = None;
+
+    if pieces_left < endgame_amount_pieces:
+        kings_positions = positions.king_end
+    else:
+        kings_positions = positions.king
+    
+    kingsq = sum([kings_positions[i] for i in board.pieces(chess.KING, chess.WHITE)])
+    kingsq = kingsq + sum([-kings_positions[chess.square_mirror(i)]
+                        for i in board.pieces(chess.KING, chess.BLACK)])
+
+    eval = total_material + pawnsq + knightsq + rooksq + queensq + kingsq 
 
     return eval
