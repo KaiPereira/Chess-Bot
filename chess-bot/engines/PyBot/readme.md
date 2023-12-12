@@ -1,5 +1,9 @@
 # TO DO
 
+1. Stop the bot from moving before castling
+2. Stop the bot from three move stalemating
+
+
 1. Checkmating
 2. Engame
 3. Get black working

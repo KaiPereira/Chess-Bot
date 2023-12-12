@@ -11,7 +11,7 @@ import random
 from engine_wrapper import MinimalEngine, MOVE
 from typing import Any
 import logging
-# from engines.PyBot.bot import get_move
+from engines.PyBot.bot import get_move
 
 
 # Use this logger variable to print messages to the console or log files.
@@ -29,19 +29,13 @@ class ExampleEngine(MinimalEngine):
 
 
 
-
-
-
-# class PyBot(ExampleEngine):
-#     def search(self, board: chess.Board, time_limit: Limit, ponder: bool, draw_offered: bool, root_moves: MOVE) -> PlayResult:
-#         print("GETTING MOVE!")
+class PyBot(ExampleEngine):
+    def search(self, board: chess.Board, time_limit: Limit, ponder: bool, draw_offered: bool, root_moves: MOVE) -> PlayResult:
+        print("GETTING MOVE!")
         
-#         move = get_move(board, 4)
+        move = get_move(board, 4)
 
-#         return PlayResult(move, None)
-
-
-
+        return PlayResult(move, None)
 
 
 

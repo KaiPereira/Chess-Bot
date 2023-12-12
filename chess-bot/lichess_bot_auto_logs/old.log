@@ -1,16 +1,16 @@
-2023-12-11 18:33:30,553 __main__ (lichess-bot.py:1026) INFO 
+2023-12-11 16:22:45,957 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-11 18:33:30,584 config (config.py:261) DEBUG Config:
+2023-12-11 16:22:45,983 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
   dir: ./engines/
-  name: FirstMove
+  name: PyBot
   working_dir: ''
   protocol: homemade
   ponder: true
@@ -28,9 +28,9 @@ engine:
     resign_score: -1000
     resign_for_egtb_minus_two: true
     resign_moves: 3
-    offer_draw_enabled: true
+    offer_draw_enabled: false
     offer_draw_score: 0
-    offer_draw_for_egtb_zero: true
+    offer_draw_for_egtb_zero: false
     offer_draw_moves: 10
     offer_draw_pieces: 10
   online_moves:
@@ -101,15 +101,17 @@ challenge:
   min_increment: 0
   max_base: 1800
   min_base: 0
-  max_days: 14
+  max_days: .inf
   min_days: 1
   variants:
   - standard
+  - fromPosition
   time_controls:
   - bullet
   - blitz
   - rapid
   - classical
+  - correspondence
   modes:
   - casual
   - rated
@@ -137,14 +139,14 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-11 18:33:30,584 config (config.py:262) DEBUG ====================
-2023-12-11 18:33:30,592 config (config.py:261) DEBUG Config:
+2023-12-11 16:22:45,983 config (config.py:262) DEBUG ====================
+2023-12-11 16:22:45,991 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
   dir: ./engines/
-  name: FirstMove
-  working_dir: /workspaces/Chess-Bot/chess-bot
+  name: PyBot
+  working_dir: C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot
   protocol: homemade
   ponder: true
   polyglot:
@@ -161,9 +163,9 @@ engine:
     resign_score: -1000
     resign_for_egtb_minus_two: true
     resign_moves: 3
-    offer_draw_enabled: true
+    offer_draw_enabled: false
     offer_draw_score: 0
-    offer_draw_for_egtb_zero: true
+    offer_draw_for_egtb_zero: false
     offer_draw_moves: 10
     offer_draw_pieces: 10
   online_moves:
@@ -237,15 +239,17 @@ challenge:
   min_increment: 0
   max_base: 1800
   min_base: 0
-  max_days: 14
+  max_days: .inf
   min_days: 1
   variants:
   - standard
+  - fromPosition
   time_controls:
   - bullet
   - blitz
   - rapid
   - classical
+  - correspondence
   modes:
   - casual
   - rated
@@ -282,20 +286,21 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-11 18:33:30,592 config (config.py:262) DEBUG ====================
-2023-12-11 18:33:30,592 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-11 18:33:30,597 __main__ (lichess-bot.py:1094) ERROR Quitting lichess-bot due to an error:
+2023-12-11 16:22:45,991 config (config.py:262) DEBUG ====================
+2023-12-11 16:22:45,991 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2023-12-11 16:22:45,997 __main__ (lichess-bot.py:1094) ERROR Quitting lichess-bot due to an error:
 Traceback (most recent call last):
-  File "/workspaces/Chess-Bot/chess-bot/lichess-bot.py", line 1091, in <module>
+  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 1091, in <module>
     start_lichess_bot()
-  File "/workspaces/Chess-Bot/chess-bot/lichess-bot.py", line 1030, in start_lichess_bot
+  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\lichess-bot.py", line 1030, in start_lichess_bot
     with engine_wrapper.create_engine(CONFIG):
-  File "/home/codespace/.python/current/lib/python3.10/contextlib.py", line 135, in __enter__
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1776.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
     return next(self.gen)
-  File "/workspaces/Chess-Bot/chess-bot/engine_wrapper.py", line 62, in create_engine
+           ^^^^^^^^^^^^^^
+  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 62, in create_engine
     Engine = getHomemadeEngine(cfg.name)
-  File "/workspaces/Chess-Bot/chess-bot/engine_wrapper.py", line 590, in getHomemadeEngine
-    import strategies
-  File "/workspaces/Chess-Bot/chess-bot/strategies.py", line 14, in <module>
-    from engines.PyBot.bot import get_move
-ModuleNotFoundError: No module named 'engines.PyBot'
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot\engine_wrapper.py", line 591, in getHomemadeEngine
+    engine: type[MinimalEngine] = getattr(strategies, name)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'strategies' has no attribute 'PyBot'
