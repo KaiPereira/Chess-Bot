@@ -1,4 +1,4 @@
-from evaluation import get_evaluation
+from .evaluation import get_evaluation
 import numpy as np
 
 # used for the minimax algorithm

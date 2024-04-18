@@ -3,6 +3,7 @@ import chess
 from io import StringIO
 import chess.pgn
 import random
+import os
 
 
 def play_opening(board):
@@ -14,8 +15,14 @@ def play_opening(board):
 
     new_board = chess.Board()
 
+    # Get the current directory of game.py
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+
+    # Define the file path relative to the current directory
+    file_path = os.path.join(current_directory, 'openings.csv')
+
     # Get all of the SAN notations
-    chess_openings = pd.read_csv("C:/Users/keira/Documents/VSCode Projects/Projects/Chess-Bot/chess-bot/engines/PyBot/data/openings/openings.csv")
+    chess_openings = pd.read_csv(file_path)
 
     chess_openings = chess_openings["moves"].tolist()
 

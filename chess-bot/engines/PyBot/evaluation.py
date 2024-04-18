@@ -1,6 +1,6 @@
-from material import get_material
+from .material import get_material
 import chess
-import positions
+from . import positions
 
 
 def piece_position_evaluation(board, type, pieces_left):
