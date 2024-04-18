@@ -15,7 +15,7 @@ def play_opening(board):
     new_board = chess.Board()
 
     # Get all of the SAN notations
-    chess_openings = pd.read_csv("C:/Users/keira/Documents/VSCode Projects/Currently Working On/Chess-Bot/chess-bot/engines/PyBot/data/openings/openings.csv")
+    chess_openings = pd.read_csv("C:/Users/keira/Documents/VSCode Projects/Projects/Chess-Bot/chess-bot/engines/PyBot/data/openings/openings.csv")
 
     chess_openings = chess_openings["moves"].tolist()
 

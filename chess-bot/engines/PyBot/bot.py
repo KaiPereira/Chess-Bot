@@ -3,7 +3,7 @@ import random
 import numpy as np
 from pathlib import Path
 import sys
-path_root = "C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot"
+path_root = "C:\\Users\\keira\\Documents\\VSCode Projects\\Projects\\Chess-Bot\\chess-bot\\engines\\PyBot"
 sys.path.append(str(path_root))
 
 from opening import play_opening

@@ -1,11 +1,11 @@
-2023-12-11 18:21:15,650 __main__ (lichess-bot.py:1026) INFO 
+2024-04-18 16:16:13,768 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2023-12-11 18:21:15,678 config (config.py:261) DEBUG Config:
+2024-04-18 16:16:13,799 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,14 +139,14 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2023-12-11 18:21:15,679 config (config.py:262) DEBUG ====================
-2023-12-11 18:21:15,684 config (config.py:261) DEBUG Config:
+2024-04-18 16:16:13,800 config (config.py:262) DEBUG ====================
+2024-04-18 16:16:13,804 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
   dir: ./engines/
   name: PyBot
-  working_dir: C:\Users\keira\Documents\VSCode Projects\Currently Working On\Chess-Bot\chess-bot
+  working_dir: C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot
   protocol: homemade
   ponder: true
   polyglot:
@@ -286,15 +286,30 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2023-12-11 18:21:15,684 config (config.py:262) DEBUG ====================
-2023-12-11 18:21:15,685 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2023-12-11 18:21:15,687 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Currently Working On\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2023-12-11 18:21:15,687 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2023-12-11 18:21:15,691 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2023-12-11 18:21:16,563 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2023-12-11 18:21:16,755 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2023-12-11 18:21:16,756 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2023-12-11 18:21:16,757 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2023-12-11 18:21:17,750 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
-2023-12-11 18:26:18,515 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
-2023-12-11 18:28:09,740 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2024-04-18 16:16:13,805 config (config.py:262) DEBUG ====================
+2024-04-18 16:16:13,805 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2024-04-18 16:16:14,255 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Projects\\Chess-Bot\\chess-bot\\engines\\PyBot']
+2024-04-18 16:16:14,256 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2024-04-18 16:16:14,262 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2024-04-18 16:16:15,090 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2024-04-18 16:16:15,251 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2024-04-18 16:16:15,251 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2024-04-18 16:16:15,253 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2024-04-18 16:16:16,308 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2024-04-18 16:21:16,917 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2024-04-18 16:26:16,918 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'correspondence_ping'}
+2024-04-18 16:26:37,647 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2024-04-18 16:26:43,395 __main__ (lichess-bot.py:1094) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 1091, in <module>
+    start_lichess_bot()
+  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 1047, in start_lichess_bot
+    start(li, user_profile, CONFIG, logging_level, args.logfile, auto_log_filename)
+  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 231, in start
+    lichess_bot_main(li,
+  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 350, in lichess_bot_main
+    accept_challenges(li, challenge_queue, active_games, max_games)
+  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 418, in accept_challenges
+    while len(active_games) < max_games and challenge_queue:
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object cannot be interpreted as an integer
