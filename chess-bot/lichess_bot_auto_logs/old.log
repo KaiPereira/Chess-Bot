@@ -1,11 +1,11 @@
-2024-04-18 16:48:13,340 __main__ (lichess-bot.py:1026) INFO 
+2024-05-07 18:58:48,780 __main__ (lichess-bot.py:1026) INFO 
     .   _/|
     .  // o\
     .  || ._)  lichess-bot 2023.12.1.2
     .  //__\
     .  )___(   Play on Lichess with a bot
     
-2024-04-18 16:48:13,366 config (config.py:261) DEBUG Config:
+2024-05-07 18:58:48,808 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
@@ -139,14 +139,14 @@ matchmaking:
   challenge_mode: random
   challenge_filter: none
 
-2024-04-18 16:48:13,367 config (config.py:262) DEBUG ====================
-2024-04-18 16:48:13,372 config (config.py:261) DEBUG Config:
+2024-05-07 18:58:48,808 config (config.py:262) DEBUG ====================
+2024-05-07 18:58:48,815 config (config.py:261) DEBUG Config:
 token: logger
 url: https://lichess.org/
 engine:
   dir: ./engines/
   name: PyBot
-  working_dir: C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot
+  working_dir: /workspaces/Chess-Bot/chess-bot
   protocol: homemade
   ponder: true
   polyglot:
@@ -286,93 +286,12 @@ matchmaking:
   overrides: {}
 pgn_file_grouping: game
 
-2024-04-18 16:48:13,372 config (config.py:262) DEBUG ====================
-2024-04-18 16:48:13,373 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
-2024-04-18 16:48:13,809 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Projects\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2024-04-18 16:48:13,810 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
-2024-04-18 16:48:13,814 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2024-04-18 16:48:14,639 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
-2024-04-18 16:48:14,826 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
-2024-04-18 16:48:14,826 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
-2024-04-18 16:48:14,828 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
-2024-04-18 16:48:15,608 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
-2024-04-18 16:48:26,802 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'challenge', 'challenge': {'id': 'QUhXl5lU', 'url': 'https://lichess.org/QUhXl5lU', 'status': 'created', 'challenger': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'rating': 1500, 'title': None, 'provisional': True, 'online': True, 'lag': 4}, 'destUser': {'id': 'kai_bot', 'name': 'Kai_Bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'correspondence', 'timeControl': {'type': 'unlimited'}, 'color': 'black', 'finalColor': 'black', 'perf': {'icon': '\ue02e', 'name': 'Correspondence'}, 'rematchOf': 'mUGZowZM'}, 'compat': {'bot': True, 'board': True}}
-2024-04-18 16:48:26,804 __main__ (lichess-bot.py:424) INFO Accept Correspondence casual challenge from Kai_Pereira (1500?) (QUhXl5lU)
-2024-04-18 16:48:26,806 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2024-04-18 16:48:27,640 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/challenge/QUhXl5lU/accept HTTP/1.1" 200 11
-2024-04-18 16:48:27,641 __main__ (lichess-bot.py:257) INFO --- Process Queued. Count: 1. IDs: {'QUhXl5lU'}
-2024-04-18 16:48:27,642 __main__ (lichess-bot.py:373) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': 'QUhXl5lUyvY2', 'gameId': 'QUhXl5lU', 'fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 'color': 'white', 'lastMove': '', 'source': 'friend', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'correspondence', 'perf': 'correspondence', 'rated': False, 'hasMoved': False, 'opponent': {'id': 'kai_pereira', 'username': 'Kai_Pereira', 'rating': 1500}, 'isMyTurn': True, 'compat': {'bot': True, 'board': True}, 'id': 'QUhXl5lU'}}
-2024-04-18 16:48:27,642 __main__ (lichess-bot.py:257) INFO --- Process Used. Count: 1. IDs: {'QUhXl5lU'}
-2024-04-18 16:48:27,660 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (1): lichess.org:443
-2024-04-18 16:48:28,517 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/QUhXl5lU HTTP/1.1" 200 None
-2024-04-18 16:48:28,517 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'QUhXl5lU', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1713484107295, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'title': None, 'rating': 1500, 'provisional': True}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2024-04-18 16:48:28,912 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Projects\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2024-04-18 16:48:28,912 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game QUhXl5lU has pid=?
-2024-04-18 16:48:28,912 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/QUhXl5lU/white Correspondence vs Kai_Pereira (1500?) (QUhXl5lU)
-2024-04-18 16:48:28,912 conversation (conversation.py:83) INFO *** https://lichess.org/QUhXl5lU/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2024-04-18 16:48:28,912 urllib3.connectionpool (connectionpool.py:1003) DEBUG Starting new HTTPS connection (2): lichess.org:443
-2024-04-18 16:48:29,704 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/QUhXl5lU/chat HTTP/1.1" 200 11
-2024-04-18 16:48:29,704 conversation (conversation.py:83) INFO *** https://lichess.org/QUhXl5lU/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2024-04-18 16:48:29,858 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/QUhXl5lU/chat HTTP/1.1" 200 11
-2024-04-18 16:48:29,858 __mp_main__ (lichess-bot.py:691) INFO 
-2024-04-18 16:48:29,858 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2024-04-18 16:48:29,858 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game QUhXl5lU
-2024-04-18 16:48:29,862 backoff (_common.py:105) INFO Backing off play_game(...) for 1.0s (NameError: name 'os' is not defined)
-2024-04-18 16:48:29,862 lichess (lichess.py:63) DEBUG Backing off 1.0 seconds after 1 tries calling function <function play_game at 0x000002007D5F28E0> with args () and kwargs {'li': <lichess.Lichess object at 0x000002007D5EEA50>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d651f50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1713483845681, 'playTime': {'total': 3905, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 86, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 39, 'lossH': 39, 'win': 45, 'winH': 45, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000002007D653790>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x2007d661ed0>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d6620d0>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d662310>, 'game_id': 'QUhXl5lU'}
-2024-04-18 16:48:29,862 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engines\PyBot\bot.py", line 10, in get_move
-    opening_move = play_opening(board)
-                   ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engines\PyBot\opening.py", line 18, in play_opening
-    current_directory = os.path.dirname(os.path.abspath(__file__))
-                        ^^
-NameError: name 'os' is not defined
-
-2024-04-18 16:48:30,850 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2024-04-18 16:48:31,643 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/QUhXl5lU HTTP/1.1" 200 None
-2024-04-18 16:48:31,643 __mp_main__ (lichess-bot.py:575) DEBUG Initial state: {'id': 'QUhXl5lU', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'correspondence', 'perf': {'name': 'Correspondence'}, 'rated': False, 'createdAt': 1713484107295, 'white': {'id': 'kai_bot', 'name': 'Kai_Bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'id': 'kai_pereira', 'name': 'Kai_Pereira', 'title': None, 'rating': 1500, 'provisional': True}, 'initialFen': 'startpos', 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 2147483647, 'btime': 2147483647, 'winc': 0, 'binc': 0, 'status': 'started'}}
-2024-04-18 16:48:31,643 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['C:\\Users\\keira\\Documents\\VSCode Projects\\Projects\\Chess-Bot\\chess-bot\\engines\\PyBot']
-2024-04-18 16:48:31,643 __mp_main__ (lichess-bot.py:581) DEBUG The engine for game QUhXl5lU has pid=?
-2024-04-18 16:48:31,643 __mp_main__ (lichess-bot.py:584) INFO +++ https://lichess.org/QUhXl5lU/white Correspondence vs Kai_Pereira (1500?) (QUhXl5lU)
-2024-04-18 16:48:31,647 conversation (conversation.py:83) INFO *** https://lichess.org/QUhXl5lU/white [player] Kai_Bot: Hi! I'm Kai_Bot. Good luck! Type !help for a list of commands I can respond to.
-2024-04-18 16:48:31,800 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/QUhXl5lU/chat HTTP/1.1" 200 11
-2024-04-18 16:48:31,801 conversation (conversation.py:83) INFO *** https://lichess.org/QUhXl5lU/white [spectator] Kai_Bot: Hi! I'm Kai_Bot. Type !help for a list of commands I can respond to.
-2024-04-18 16:48:31,954 urllib3.connectionpool (connectionpool.py:456) DEBUG https://lichess.org:443 "POST /api/bot/game/QUhXl5lU/chat HTTP/1.1" 200 11
-2024-04-18 16:48:31,954 __mp_main__ (lichess-bot.py:691) INFO 
-2024-04-18 16:48:31,954 __mp_main__ (lichess-bot.py:692) INFO move: 1
-2024-04-18 16:48:31,954 engine_wrapper (engine_wrapper.py:652) INFO Searching for time 10 seconds for game QUhXl5lU
-2024-04-18 16:48:31,954 backoff (_common.py:105) INFO Backing off play_game(...) for 1.3s (NameError: name 'os' is not defined)
-2024-04-18 16:48:31,954 lichess (lichess.py:63) DEBUG Backing off 1.3 seconds after 2 tries calling function <function play_game at 0x000002007D5F28E0> with args () and kwargs {'li': <lichess.Lichess object at 0x000002007D5EEA50>, 'control_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d651f50>, 'user_profile': {'id': 'kai_bot', 'username': 'Kai_Bot', 'perfs': {'bullet': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'blitz': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'rapid': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'classical': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}, 'correspondence': {'games': 0, 'rating': 2000, 'rd': 500, 'prog': 0, 'prov': True}}, 'title': 'BOT', 'createdAt': 1697235628483, 'seenAt': 1713483845681, 'playTime': {'total': 3905, 'tv': 0}, 'url': 'https://lichess.org/@/Kai_Bot', 'count': {'all': 86, 'rated': 0, 'ai': 0, 'draw': 2, 'drawH': 2, 'loss': 39, 'lossH': 39, 'win': 45, 'winH': 45, 'bookmark': 0, 'playing': 0, 'import': 0, 'me': 0}, 'followable': True, 'following': False, 'blocking': False, 'followsYou': False}, 'config': <config.Configuration object at 0x000002007D653790>, 'challenge_queue': <ListProxy object, typeid 'list' at 0x2007d661ed0>, 'correspondence_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d6620d0>, 'logging_queue': <AutoProxy[Queue] object, typeid 'Queue' at 0x2007d662310>, 'game_id': 'QUhXl5lU'}
-2024-04-18 16:48:31,954 lichess (lichess.py:65) DEBUG Exception: Traceback (most recent call last):
-  File "C:\Users\keira\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\backoff\_sync.py", line 105, in retry
-    ret = target(*args, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\lichess-bot.py", line 623, in play_game
-    engine.play_move(board,
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engine_wrapper.py", line 159, in play_move
-    best_move = self.search(board, time_limit, can_ponder, draw_offered, best_move)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\strategies.py", line 36, in search
-    move = get_move(board, 4)
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engines\PyBot\bot.py", line 10, in get_move
-    opening_move = play_opening(board)
-                   ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\keira\Documents\VSCode Projects\Projects\Chess-Bot\chess-bot\engines\PyBot\opening.py", line 18, in play_opening
-    current_directory = os.path.dirname(os.path.abspath(__file__))
-                        ^^
-NameError: name 'os' is not defined
-
-2024-04-18 16:48:33,304 urllib3.connectionpool (connectionpool.py:273) DEBUG Resetting dropped connection: lichess.org
-2024-04-18 16:48:33,467 __mp_main__ (lichess-bot.py:68) DEBUG Received SIGINT. Terminating client.
+2024-05-07 18:58:48,816 config (config.py:262) DEBUG ====================
+2024-05-07 18:58:48,816 __main__ (lichess-bot.py:1029) INFO Checking engine configuration ...
+2024-05-07 18:58:48,817 engine_wrapper (engine_wrapper.py:67) DEBUG Starting engine: ['/workspaces/Chess-Bot/chess-bot/engines/PyBot']
+2024-05-07 18:58:48,818 __main__ (lichess-bot.py:1032) INFO Engine configuration OK
+2024-05-07 18:58:48,820 urllib3.connectionpool (connectionpool.py:1053) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2024-05-07 18:58:49,290 urllib3.connectionpool (connectionpool.py:547) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2024-05-07 18:58:49,447 urllib3.connectionpool (connectionpool.py:547) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2024-05-07 18:58:49,448 __main__ (lichess-bot.py:1041) INFO Welcome Kai_Bot!
+2024-05-07 18:58:49,449 __main__ (lichess-bot.py:209) INFO You're now connected to https://lichess.org/ and awaiting challenges.
